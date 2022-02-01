@@ -13,6 +13,11 @@
         <maven.compiler.target>15</maven.compiler.target>
         <restassured.version>4.5.0</restassured.version>
         <allure.version>2.8</allure.version>
+        <testng.version>7.5</testng.version>
+        <jackson-databin.version>2.13.1</jackson-databin.version>
+        <jsonassert.version>1.5.0</jsonassert.version>
+        <allure-testng.version>2.17.2</allure-testng.version>
+        <allure-rest-assured.version>2.17.2</allure-rest-assured.version>
     </properties>
 
     <dependencies>
@@ -27,6 +32,38 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-maven</artifactId>
             <version>${allure.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>${jsonassert.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure-testng.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>${allure-rest-assured.version}</version>
         </dependency>
 
 
